@@ -1,2 +1,3 @@
 # sentiment-analysis
-sentiment analysis by training the data on amazon,imdb and yelp datasets
+sentiment analysis by training the data on amazon,imdb and yelp datasets.
+Accuracy - 85%
