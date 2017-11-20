@@ -21,7 +21,7 @@ go,bo = 0,0
 gl,bl = 0,0
 graphx,graphy=[],[]
 
-#def train(fileloc):
+# TRAINING STARTS
 file = open('yelp_labelled.txt','r')
 for line in file:
     tokens = line.split()
@@ -91,6 +91,11 @@ for key in bad.keys():
     mnb=min(mnb,bad[key]/bl)
 mng/=10
 mnb/=10
+
+# TRAINING ENDS
+
+
+
 def predict(sentence):
     words = sentence.split()
     pg,pb = 1,1
@@ -113,6 +118,14 @@ def predict2(words):
     if pg>=pb:return 1
     else: return 0
 
+
+
+
+
+
+
+
+
 import matplotlib.pyplot as plt
 plt.plot(graphx,graphy)
 plt.title('Accuracy graph')
@@ -123,7 +136,7 @@ plt.show()
 
 # check for queries
 
-query = 'worst journey ever'
+query = 'he is good'
 print(predict(query))
 
 
